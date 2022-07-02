@@ -5,6 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="/" method="POST">
+        <section>
+          <h2>How can we help you?</h2>
+
+          <label for="username">Your Name</label>
+          <input type="text" name="user-name" id="username" />
+
+          <label for="useremail">Your Email Address</label>
+          <input type="email" name="user-email" id="useremail" />
+
+          <label for="userphone">Your Phone Number</label>
+          <input
+            type="tel"
+            name="user-phone"
+            id="userphone"
+            placeholder="(123) 456-7890"
+          />
+        </section>
+
+        <section>
+          <label for="usermessage">Your Message</label>
+          <textarea name="user-message" id="usermessage" rows="8"></textarea>
+        </section>
+
+        <section>
+          <label for="discovery">How did you find us?</label>
+          <select name="discovery" id="discovery">
+            <option value="" disabled selected hidden>
+              Please select an option
+            </option>
+            <option value="web-search">Web Search</option>
+            <option value="social-media">Social Media</option>
+            <option value="friends-family">Friends or Family</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>How should we contact you?</h2>
+
+          <input type="radio" name="contact" id="call" value="call" />
+          <label for="call">By phone</label>
+
+          <input type="radio" name="contact" id="text" value="text" />
+          <label for="text">By text</label>
+
+          <input type="radio" name="contact" id="email" value="email" />
+          <label for="email">By email</label>
+        </section>
+
+        <section>
+          <input type="checkbox" name="accept-terms" id="terms" />
+          <label for="terms">Accept Terms</label>
+        </section>
+
+        <section>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>

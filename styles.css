@@ -1,0 +1,8 @@
+html {
+    --color-cream-100: rgb(254, 251, 243);
+    --color-cream-400: rgb(248, 240, 223);
+}
+
+body {    
+    background-color: var(--color-cream-100);
+}
